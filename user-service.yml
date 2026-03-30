@@ -13,6 +13,12 @@ jwt:
   expiration: 86400000
   refresh-expiration: 604800000
 
+app:
+  password-reset:
+    otp-expiry-minutes: ${OTP_EXPIRY_MINUTES:10}
+  internal:
+    api-key: ${APP_INTERNAL_API_KEY:jobportal-internal-key}
+
 springdoc:
   swagger-ui:
     enabled: false
